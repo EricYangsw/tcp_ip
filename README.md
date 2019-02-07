@@ -12,3 +12,4 @@
 [深入浅出”来解读Docker网络核心原理](http://blog.51cto.com/ganbing/2087598) link.
 
 案例2.Kafka就是基於TCP上建立自己的通訊協議，以便達到"multiplex requests, the ability to simultaneously poll many connections"...
+[The Explanation Behind The Protocols That Kafka Is Using](https://streamdata.io/blog/explanation-behind-protocols-that-kafka-is-using/)
