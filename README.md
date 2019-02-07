@@ -8,8 +8,10 @@
 2.針對許多處理資料的工具(Kafka、Elastic Search、all kind of Data Base....等），很多是基於TCP之上後另外因應需求而設計的網路協議（對比網頁使用的HTTP），
 
 
-    案例1.Docker 的 Bridge 模式網路建立就是利用Sanbox的虛擬化技術在網路層(IP）建立一組虛擬IP，有這認知，在部屬多容器上可以更深入的理解。
+**案例1.Docker 的 Bridge 模式網路建立就是利用Sanbox的虛擬化技術在網路層(IP）建立一組虛擬IP，有這認知，在部屬多容器上可以更深入的理解。
 [深入浅出”来解读Docker网络核心原理](http://blog.51cto.com/ganbing/2087598) link.
-
-    案例2.Kafka就是基於TCP上建立自己的通訊協議，以便達到"multiplex requests, the ability to simultaneously poll many connections"...
+    
+**案例2.Kafka就是基於TCP上建立自己的通訊協議，以便達到"multiplex requests, the ability to simultaneously poll many connections"...
 [The Explanation Behind The Protocols That Kafka Is Using](https://streamdata.io/blog/explanation-behind-protocols-that-kafka-is-using/)
+  
+**案例3.Socket是在 UNIX 系統下利用網路通訊的一種接口,本質上就是一個用在UNIX系統的介面程式(Interface)，介於TCP層和應用層之間，目的是把TCP/IP隱藏，讓應用層可以方便且快速的使用TCP/IP協議，一般的程式操作上，大家可以把它當作是(抽象化)對於檔案I/O的一個操作
