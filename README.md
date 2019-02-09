@@ -36,4 +36,9 @@
   
  ### 什麼是 Socket?
   **常聽到的Socket不是一個層，而是UNIX系統下利用網路通訊的一種接口,本質上就是一個介面程式(Interface)，介於TCP層和應用層之間，目的是把TCP/IP隱藏，讓應用層可以方便快速的使用TCP/IP協議，一般的程式操作上，大家可以把Socket當作是(抽象為)對於檔案I/O的一個操作
-  ![socket](/image/socket.jpg)
+
+![socket](/image/socket.jpg)
+
+[Simple TCP server by Python Socket Module](https://github.com/EricYangsw/tcp_ip/blob/master/server_client/simple_tcp_server.ipynb)
+
+[Simple TCP Client by Python Socket Module](https://github.com/EricYangsw/tcp_ip/blob/master/server_client/simple_tcp_client.ipynb)
