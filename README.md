@@ -63,3 +63,16 @@
 [Simple TCP server by Python Socket Module](https://github.com/EricYangsw/tcp_ip/blob/master/server_client/simple_tcp_server.ipynb)
 
 [Simple TCP Client by Python Socket Module](https://github.com/EricYangsw/tcp_ip/blob/master/server_client/simple_tcp_client.ipynb)
+
+
+### TCP/IP資料傳送流程：
+---------------------
+![TCP/IP Flow](/image/tcpip_flow.jpg)
+      
+以上圖為例，以下簡述TCP/IP資料傳送流程，
+1. 最上層使用者注重的是文字內容的表達，而在按下傳送後，E-mail應用程式處理通訊部份就開始工作，應用程式會決定這封信該怎麼使用下層TCP的協定來傳送，例如：是整間公司累積5封信後一起傳送？還是一封一封各自傳送，Email是否要依照特定格式去寫...等，都是應用層的決定範圍。
+2. 下層TCP協定接收到上層信件的資料後，開始將資料處理成封包並加上TCP的表頭後往下IP層傳遞，而TCP這裡主要的功用就是建立讓這資料可以在相通的E-mail程式去通訊，並且為了保證所有封包對方都可以收的到，TCP另外會先確認對方是否有連線，並且在最後確認封包都有收到沒有遺漏...等，這些動作都是IP層沒有作到的。
+3. IP層接收到資料後會加上IP層的表頭，並且想辦法把資料送到對方的電腦(非應用程式），當中怎麼靠IP找到對方電腦都是IP層負責處理的，可以想像成IP層就像電話，其負責可以連到另一個電話，但聲音要怎麼保證清楚的傳過去則是靠上層的TCP協定處理。
+4. IP層以下就是實際網路線跟電腦透過網卡將資料傳到網路現中可以接受的資料
+
+
